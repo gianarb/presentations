@@ -19,3 +19,11 @@ belong to the engine in its own directory.
 
 marp is a npm project, you need to run `cd ./marp && npm install` in order to
 get the required dependencies.
+
+# License
+
+Have a look at the full [LICENSE](./LICENSE).
+
+<p align="center">
+  <img alt="Creative common license" src="./cc.png">
+</p>
