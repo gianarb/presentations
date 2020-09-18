@@ -1,0 +1,20 @@
+#!/bin/sh
+
+################################################################################
+# Help                                                                         #
+################################################################################
+help()
+{
+   echo "This script helps you generate a PDF deck via marpit"
+   echo
+   echo "Syntax: marp-gen-pdf ./2020-test/slides"
+}
+
+if [ $# -eq 0 ]
+  then
+    echo "🥺 You have to specify the path containing the md slides as first argument"
+    help
+    exit
+fi
+
+./marp/node_modules/.bin/marp --theme-set ./marp/themes/ --engine ./marp/marpit.js -o deck.pdf $1
