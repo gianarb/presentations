@@ -6,6 +6,7 @@ module.exports = function (opts) {
   return new Marp(opts)
     .use(require("markdown-it-include"))
     .use(require("markdown-it-textual-uml"))
+    .use(require('markdown-it-attrs'))
     .use(require("thingworx-markdown-it-video"), {
       youtube: { width: 640, height: 390 },
     });
